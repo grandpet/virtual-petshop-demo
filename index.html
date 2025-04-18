@@ -31,6 +31,19 @@
 
             camera.position.z = 20;
 
+            // Create products as images on walls
+            const textureLoader = new THREE.TextureLoader();
+
+            // Acana Product on wall
+            const acanaTexture = textureLoader.load('images/acana.jpg');
+            const acanaMaterial = new THREE.MeshBasicMaterial({ map: acanaTexture });
+            const acanaGeometry = new THREE.PlaneGeometry(4, 3); // Size of the product image
+            const acanaMesh = new THREE.Mesh(acanaGeometry, acanaMaterial);
+            acanaMesh.position.set(-5, 2, -5); // Positioning on the wall
+            scene.add(acanaMesh);
+
+            // More products can be added here in a similar way...
+
             // Handle user movement
             let moveSpeed = 0.2;
             let keyboard = {};
