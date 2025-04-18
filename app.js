@@ -1,0 +1,1 @@
+console.log("Virtual Petshop loaded!");
