@@ -1,0 +1,35 @@
+
+.shelves {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.shelf {
+  border: 2px solid #000;
+  padding: 10px;
+  background-color: #f9f9f9;
+}
+
+.shelf h3 {
+  text-align: center;
+  color: #333;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.product {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+  background-color: #fff;
+}
+
+.product:hover {
+  background-color: #e6e6e6;
+}
